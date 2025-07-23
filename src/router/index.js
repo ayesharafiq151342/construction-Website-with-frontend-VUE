@@ -2,7 +2,9 @@ import { createRouter, createWebHistory } from 'vue-router';
 import Home from '../components/Home.vue';
 import Paractiice from '../components/paractiice.vue';
 import parref from '../components/parref.vue';
-import  Login from '../components/Login.vue'
+import login from '../components/login.vue';
+import Signup from '../components/Signup.vue';
+
 // DEFINE ROUTES
 const routes = [
   {
@@ -19,9 +21,13 @@ const routes = [
     name:'parref',
     component:parref,
   },
-   {path:'/Login',
-    name:'Login',
-    component:Login,
+   {path:'/login',
+    name:'login',
+    component:login,
+  },
+  {path:'/signup',
+    name:'signup',
+    component:Signup,
   }
 ];
 
